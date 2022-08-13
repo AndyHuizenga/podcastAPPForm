@@ -67,7 +67,7 @@ class HTMLController {
         return "index"
     }
 
-    @PostMapping("/student")
+    @PostMapping("/addNewPodcast")
     fun addStudent(newPodcastRequest: NewPodcastRequest, model: Model): String {
         
 
@@ -76,7 +76,7 @@ class HTMLController {
         return "addPodcast"
     }
 
-    @GetMapping("/student")
+    @GetMapping("/addNewPodcast")
     fun createStudentPage(model: Model): String {
         model.addAttribute("NewPodcastRequest", NewPodcastRequest())
         return "addPodcast"

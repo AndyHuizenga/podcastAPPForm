@@ -74,7 +74,7 @@ class PodcastService {
     }
 
     fun saveNewPodcast(podcast: NewPodcastRequest): Podcast {
-        var newPodcast = Podcast(id = podcast.id, podcastName = podcast.podcastName, createdByUser = podcast.createdByUser, file_location = podcast.file_location, coverIMG = podcast.coverIMG)
+        var newPodcast = Podcast(podcastName = podcast.podcastName, createdByUser = podcast.createdByUser, file_location = podcast.file_location, coverIMG = podcast.coverIMG)
         return podcastRepository.save(newPodcast)
     }
 

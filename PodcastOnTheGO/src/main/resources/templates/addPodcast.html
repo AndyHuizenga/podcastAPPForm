@@ -27,12 +27,12 @@
 
 
 
-    <form  th:action="@{/addPodcastTest}"  th:method="post"  th:object="${NewPodcastRequest}">
-       <div class="mb-5">
+    <form  th:action="@{/addNewPodcast}"  th:method="post"  th:object="${NewPodcastRequest}">
+      <!-- <div class="mb-5">
             <label for="id" class="form-label">id</label>
             <input th:field="*{id}" type="text" class="form-control" id="id" aria-describedby="emailHelp">
         </div>
-
+-->
         <div class="mb-5">
             <label for="podcastName" class="form-label">podcastName</label>
             <input th:field="*{podcastName}" type="text" class="form-control" id="podcastName">

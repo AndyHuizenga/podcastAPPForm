@@ -3,7 +3,7 @@ package com.example.podcastonthego.dto
 import com.example.podcastonthego.models.Podcast
 
 class NewPodcastRequest(
-    val id: Long = -1,
+
     var podcastName: String? = null,
     var createdByUser: String?  = null,
     var coverIMG: String?  = null,
